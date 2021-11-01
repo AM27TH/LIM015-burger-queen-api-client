@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: -apple-system, 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#signInButton {
+  background-color: #F8A000;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  justify-content: space-evenly;
+}
+
+.css-wjh20t-MuiPagination-ul {
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .css-heg063-MuiTabs-flexContainer {
+    justify-content: flex-start;
+  }
+}
