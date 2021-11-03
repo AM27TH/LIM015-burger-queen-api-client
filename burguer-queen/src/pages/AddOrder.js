@@ -56,9 +56,9 @@ export default function AddOrder() {
   };
 
   const addOrder = () => {
-    setLoading(true);
     const data = { client };
     if (cart !== undefined && cart.length !== 0) {
+      setLoading(true);
       data.userId = auth.user._id;
       data.products = cart.map((product) => ({
         qty: product.quantity,
@@ -75,6 +75,9 @@ export default function AddOrder() {
         }
         setLoading(false);
       });
+    } else {
+      setMessage({ color: 'error', text: 'Debe enviar una orden' });
+      openSnackbar();
     }
   };
 

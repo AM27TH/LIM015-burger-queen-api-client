@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Redirect, Switch, Route} from "react-router-dom";
+import {HashRouter as Router, Redirect, Switch, Route} from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
 import Login from "../pages/Login";

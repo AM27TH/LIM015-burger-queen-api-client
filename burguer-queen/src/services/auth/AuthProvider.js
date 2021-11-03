@@ -26,7 +26,7 @@ const AuthProvider = ({ children }) => {
       if(response.err) setUser(null)
       else {
         const userAuth = await getUserById(email, response.token);
-        response = { ...userAuth, ...response }
+        response = { ...userAuth, ...response, dateEntry: Date.now() }
         setUser(response)
       }
       return response

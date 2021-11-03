@@ -321,6 +321,7 @@ const UpdateUserForm = ({
             if (item._id === data._id) {
               return {
                 ...item,
+                email: response.email,
                 roles: response.roles.rol,
               };
             } else {
